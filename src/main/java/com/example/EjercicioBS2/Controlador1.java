@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controlador1 {
 
-    @Autowired(required = false)
+    @Autowired
     PersonaService personaServicio = new PersonaServiceImpl();
 
     @GetMapping("/controlador1/addPersona")

@@ -1,9 +1,11 @@
 package com.example.EjercicioBS2;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PersonaServiceImpl implements PersonaService{
-    @Autowired
+
     Persona persona = new Persona();
 
     public String getNombre() {
