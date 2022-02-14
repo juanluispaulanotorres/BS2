@@ -1,0 +1,23 @@
+package com.example.EjercicioBS2;
+
+import lombok.Data;
+import org.springframework.stereotype.Service;
+
+@Data
+
+public class Persona {
+    private String nombre;
+    private String poblacion;
+    private int edad;
+
+    public Persona () {
+
+    }
+
+    public Persona (String nombre, String poblacion, int edad) {
+        this.nombre = nombre;
+        this.poblacion = poblacion;
+        this.edad = edad;
+    }
+
+}
