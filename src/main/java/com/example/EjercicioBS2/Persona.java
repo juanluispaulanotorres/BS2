@@ -3,7 +3,6 @@ package com.example.EjercicioBS2;
 import lombok.Data;
 
 @Data
-
 public class Persona {
     private String nombre;
     private String poblacion;

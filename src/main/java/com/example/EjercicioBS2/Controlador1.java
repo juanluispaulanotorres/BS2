@@ -1,15 +1,15 @@
 package com.example.EjercicioBS2;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class Controlador1 {
 
     @Autowired
+    @Qualifier("bean1")
     PersonaService personaServicio = new PersonaServiceImpl();
 
     @Autowired
